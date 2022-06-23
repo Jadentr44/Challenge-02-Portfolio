@@ -1,0 +1,149 @@
+/* varables */
+:root{
+  --darkGray: rgb(62, 61, 68);
+  --lightBlue: rgb(91, 207, 228);
+}
+
+/* header */
+
+/* setting up the formats and collors for the nav bar */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+  background-color: var(--darkGray);
+}
+#name{
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  font-size: 250%;
+  width: 20%;
+  background-color:var(--lightBlue);
+  color: var(--darkGray);
+}
+#navContent{
+width: 40%;
+display: flex;
+  align-items: center;
+}
+#navContent ul{
+  margin-right: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navContent li{
+  color: var(--lightBlue);
+  text-decoration: none;
+  border: solid 3px var(--darkGray);
+  border-bottom: solid var(--lightBlue);
+}
+#navContent a{
+  text-decoration: none;
+}
+
+
+
+header figure{
+  height: 22vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeV-ek2IuKJdX7X-TAfX7ECH9pyQDG29MPUA&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sub{
+  color: white;
+  position: relative;
+  top: 60%;
+  left: 80%;
+}
+
+
+/* main */
+main{
+  width: 98%;
+  margin: auto;
+}
+main section{
+  display: flex;
+  margin: 4% 0;
+}
+.label{
+  display: flex;
+  width: 30%;
+  padding-right: 3%;
+  flex-direction: column;
+  align-items: flex-end;
+  border-right: solid var(--lightBlue);
+  font-size: 250%;
+}
+
+
+.content{
+  width: 70%;
+  padding: 1% 2%;
+  display: flex;
+  align-items: center;
+}
+.content ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+/* work buttons */
+#work{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#mainWork{
+  width: 100%;
+  height: 20vh;
+  background-image: url("https://internet-salmagundi.com/wp-content/uploads/2019/03/W3-MatFrame-895x493px-Qual100.jpg");
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 2px var(--lightBlue);
+  margin-bottom: 2%;
+}
+#work .workLabel{
+  width: 18%;
+  position: relative;
+  top: 91%;
+  padding-left: 3%;
+  
+  
+  background-color: var(--lightBlue);
+}
+#work .subLabel{
+  background-color: var(--lightBlue);
+  width: 38%;
+  position: relative;
+  top: 75%;
+}
+.subWorkRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subWork{
+  height: 8vh;
+  border: solid 2px var(--lightBlue);
+  width: 48%;
+  margin-bottom: 2%;
+}
+
+/* pseudo elements*/
+#navContent li:hover{
+  background-color: var(--lightBlue);
+  color: var(--darkGray);
+  border: 3px solid var(--lightBlue);
+  
+  
+}
+
