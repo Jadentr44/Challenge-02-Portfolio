@@ -1,18 +1,22 @@
-/* varables */
+/* varables and reacuring code */
 :root{
   --darkGray: rgb(62, 61, 68);
   --lightBlue: rgb(91, 207, 228);
 }
+.spaceBetween{
+  display: flex;
+  justify-content: space-between;
+}
 
-/* header */
+/* header -------------*/
 
 /* setting up the formats and collors for the nav bar */
 nav{
-  display: flex;
-  justify-content: space-between;
   padding: 1% 0;
   background-color: var(--darkGray);
 }
+
+/* aligning the name left and decorating */
 #name{
   display: flex;
   align-items: center;
@@ -22,18 +26,20 @@ nav{
   background-color:var(--lightBlue);
   color: var(--darkGray);
 }
+
 #navContent{
 width: 40%;
 display: flex;
-  align-items: center;
+align-items: center;
 }
+
+/* styling the nav buttons */
 #navContent ul{
   margin-right: 8%;
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-
 #navContent li{
   color: var(--lightBlue);
   text-decoration: none;
@@ -45,7 +51,7 @@ display: flex;
 }
 
 
-
+/* Setting the header image and subtitle*/
 header figure{
   height: 22vh;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeV-ek2IuKJdX7X-TAfX7ECH9pyQDG29MPUA&usqp=CAU");
@@ -60,7 +66,7 @@ header figure{
 }
 
 
-/* main */
+/* main ---------------*/
 main{
   width: 98%;
   margin: auto;
@@ -69,6 +75,7 @@ main section{
   display: flex;
   margin: 4% 0;
 }
+/* giving the label a width based off the screen and pushing the text to the right */
 .label{
   display: flex;
   width: 30%;
@@ -79,13 +86,14 @@ main section{
   font-size: 250%;
 }
 
-
+/* giving the content a width based off the screen */
 .content{
   width: 70%;
   padding: 1% 2%;
   display: flex;
   align-items: center;
 }
+/* resorces at the bottom */
 .content ul{
   width: 100%;
   display: flex;
@@ -93,22 +101,20 @@ main section{
   
 }
 
-/* work buttons */
+/* work links---------- */
 #work{
   display: flex;
   width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
+/* giving the bigger work link its style */
 #mainWork{
   width: 100%;
   height: 20vh;
   background-image: url("https://internet-salmagundi.com/wp-content/uploads/2019/03/W3-MatFrame-895x493px-Qual100.jpg");
-
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: solid 2px var(--lightBlue);
+  border: solid 3px var(--lightBlue);
   margin-bottom: 2%;
 }
 #work .workLabel{
@@ -116,10 +122,10 @@ main section{
   position: relative;
   top: 91%;
   padding-left: 3%;
-  
-  
   background-color: var(--lightBlue);
 }
+
+/* giving the smaller work buttons style */
 #work .subLabel{
   background-color: var(--lightBlue);
   width: 38%;
@@ -127,15 +133,34 @@ main section{
   top: 75%;
 }
 .subWorkRow{
-  display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .subWork{
   height: 8vh;
-  border: solid 2px var(--lightBlue);
+  border: solid 3px var(--lightBlue);
   width: 48%;
   margin-bottom: 2%;
+}
+
+/* giving the work divs a background image */
+#google{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png");
+  
+}
+#youtube{
+  background-image: url("https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500");
+}
+#discord{
+  background-image: ("https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500");
+}
+#vscode{
+  background-image: ("https://yt3.ggpht.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj");
+}
+/* sizing all the pictures in the work section */
+#google, #youtube, #discord, #vscode, #mainWork{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* pseudo elements*/
@@ -143,7 +168,12 @@ main section{
   background-color: var(--lightBlue);
   color: var(--darkGray);
   border: 3px solid var(--lightBlue);
-  
-  
+}
+
+.subWork:hover {
+  opacity: 60%;
+}
+#mainWork:hover{
+  opacity: 60%;
 }
 
