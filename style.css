@@ -59,8 +59,11 @@ header figure{
   background-size: cover;
 }
 #sub{
-  color: white;
+  text-align: center;
+  width: 10%;
+  background-color: var(--lightBlue);
   position: relative;
+  border: solid var(--darkGray) 3px;
   top: 60%;
   left: 80%;
 }
@@ -99,6 +102,11 @@ main section{
   display: flex;
   justify-content: space-around;
   
+}
+.content a{
+  text-decoration: none;
+  border-bottom: solid var(--lightBlue);
+  color: black;
 }
 
 /* work links---------- */
@@ -151,10 +159,10 @@ main section{
   background-image: url("https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500");
 }
 #discord{
-  background-image: ("https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500");
+  background-image: url("https://cdn2.downdetector.com/static/uploads/logo/Discord_logo.png");
 }
 #vscode{
-  background-image: ("https://yt3.ggpht.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj");
+  background-image: url("https://yt3.ggpht.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj");
 }
 /* sizing all the pictures in the work section */
 #google, #youtube, #discord, #vscode, #mainWork{
@@ -162,6 +170,7 @@ main section{
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 
 /* pseudo elements*/
 #navContent li:hover{
@@ -177,3 +186,6 @@ main section{
   opacity: 60%;
 }
 
+#work a{
+  display: flex;
+}
